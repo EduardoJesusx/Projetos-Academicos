@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background: linear-gradient(27deg, #2e98449c, #3827ab);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+}
+
+#tela button, input
+{
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+input{
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  padding: 4px 10px;
+}
+
+#tela 
+{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient( 227deg, #3e4fab9c, #c178369c);
+  width: 350px;
+  margin: auto;
+  margin-top: 30vh;
+  padding: 20px;
+  box-shadow: 3px 4px 20px 12px #0000005c;
+  border-radius: 12px;
+  animation: girarTelaFoda 40s infinite cubic-bezier(0.96, 0.01, 0.38, 0.97);
+}
+
+#botoes
+{
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  margin-top: 30px;
+
+}
+
+#botoes button
+{
+  height: 45px;
+  border-radius: 5px;
+  width: 60px;
+  margin: 5px;
+  border: none;
+  box-shadow: inset -4px -2px 8px 4px #0000005c;
+  background: none;
+  color: white;
+}
+
+#botoes button:hover{
+  box-shadow: -4px -2px 8px 4px #0000005c;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+#botoes button:active{
+  box-shadow: inset -4px -2px 8px 4px #0000005c;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+@keyframes girarTelaFoda {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+   }
+}
